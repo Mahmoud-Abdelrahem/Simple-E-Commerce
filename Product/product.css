@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #131921;
+  color: white;
+  border-bottom: 1px solid #d0d0d0;
+  position: sticky;
+  top: 0;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: white;
+  font-family: mamazon;
+}
+
+.nav-mid {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-mid input {
+  padding-right: 450px;
+  height: 34px;
+  padding-left: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.nav-mid button {
+  position: absolute;
+  right: 0;
+  border: none;
+  padding: 8px 25px;
+  background-color: rgb(253, 169, 13);
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  font-size: 16px;
+  transition: ease 0.3s;
+
+}
+
+.nav-mid button:hover {
+  background-color: rgb(230, 154, 12);
+  transform: scale(1.1);
+}
+
+.nav-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart .cart-counter {
+  width: 15px;
+  height: 16px;
+  position: absolute;
+  z-index: -1;
+  top: 12px;
+  right: 49px;
+  border-radius: 50%;
+  color: orange;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Product style */
+
+.product-details {
+  display: flex;
+}
+
+.product-image {
+  width: 30%;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 100%;
+}
+
+.prod-details {
+  width: 40%;
+  margin-top: 50px;
+
+}
+
+.prod-details h5 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007185;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+
+.rate-count {
+  font-size: 12px;
+}
+
+.bottom div {
+  margin-top: 30px;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.price span {
+  font-weight: bold;
+}
+
+.product-box {
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 12px;
+  margin: 100px 0;
+  width: 300px;
+  margin-left: 80px;
+  height: 300px;
+}
+
+.product-box div {
+  margin-top: 30px;
+}
+
+.box-price span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.box-delivery {
+  font-size: 18px;
+}
+
+.box-delivery span {
+  font-weight: bold;
+}
+
+.box-location {
+  font-size: 12px;
+  color: #007185;
+}
+
+.addtocart {
+  margin: 20px auto;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #ffa41c;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+span#username {
+  color: #ffd814;
+}
+
+@font-face {
+  font-family: mamazon;
+  src: url(../fonts/MontserratAlternates-BoldItalic.ttf);
+}

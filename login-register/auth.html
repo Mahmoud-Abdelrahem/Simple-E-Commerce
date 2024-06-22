@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <script src="https://kit.fontawesome.com/b7b61360e3.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../Resorces/favicon-.ico">
+    <link rel="stylesheet" href="auth.css">
+
+<body>
+    <div class="wrapper">
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="../index.html" onsubmit="welcomeback(event)" class="formclass">
+                <div class="input-box">
+                    <span class="icon">
+                        <i style="color: aliceblue;" class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" id="email" style="color: aliceblue;" minlength="10" required
+                        title="wrong Email please enter your email again">
+                    <label style="color: aliceblue;">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i style="color: aliceblue" class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" id="password" style="color: aliceblue;" required minlength="8" required
+                        title="wrong Password please enter your password again">
+                    <label style="color: aliceblue;">Password </label>
+                </div>
+                <div class="remeber-forget">
+                    <label style="color: aliceblue;"> <input type="checkbox">Remeber me </label>
+                    <a href="#">Forget password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register" style="color: aliceblue;">
+                    <p> Don't have an account?<a href="#" class="register-link"> Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box Register">
+            <h2>Register</h2>
+            <form action="./auth.html" class="formclass">
+                <div class="input-box">
+                    <span class="icon">
+                        <i style="color: aliceblue;" class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" id="name1" style="color: aliceblue;" required minlength="3" maxlength="15"
+                        required title="wrong name please enter your name again">
+                    <label style="color: aliceblue;">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i style="color: aliceblue;" class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" id="email1" style="color: aliceblue;" minlength="10" required
+                        title="wrong Email please enter your email again">
+                    <label style="color: aliceblue;">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i style="color: aliceblue" class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" id="password1" style="color: aliceblue;" required minlength="8" required
+                        title="wrong password please enter your Password again">
+                    <label style="color: aliceblue;">Password </label>
+                </div>
+                <div class="remeber-forget">
+                    <label style="color: aliceblue;"> <input type="checkbox"> I agree to the trems & condicions
+                    </label>
+
+                </div>
+                <button onclick="setlocalstorage()" type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>
+                        Already have an account?<a class="login-link"> Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+
+</html>
